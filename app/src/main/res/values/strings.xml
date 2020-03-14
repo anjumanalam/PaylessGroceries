@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Payless Groceries</string>
+    <string name="empty_shop_list">Empty Shopping List</string>
+    <string name="add_item">Add Item</string>
+    <string name="enter_email">Enter a valid email address</string>
+    <string name="enter_password">Enter your password</string>
 </resources>
