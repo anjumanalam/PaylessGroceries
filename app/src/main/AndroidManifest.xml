@@ -13,14 +13,14 @@
         <activity android:name="com.example.paylessgroceries1.HomeActivity"></activity>
         <activity android:name="com.example.paylessgroceries1.ResetPasswordActivity" />
         <activity android:name="com.example.paylessgroceries1.ForgotPasswordActivity" />
-        <activity android:name="com.example.paylessgroceries1.CreateAccountActivity">
+        <activity android:name="com.example.paylessgroceries1.CreateAccountActivity"></activity>
+        <activity android:name="com.example.paylessgroceries1.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            </activity>
-        <activity android:name="com.example.paylessgroceries1.MainActivity"></activity>
+        </activity>
     </application>
 
 </manifest>
