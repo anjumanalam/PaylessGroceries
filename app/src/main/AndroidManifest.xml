@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.paylessgroceries">
+    package="com.example.paylessgroceries1">
 
     <application
         android:allowBackup="true"
@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".ResetPasswordActivity" />
-        <activity android:name=".ForgotPasswordActivity" />
-        <activity android:name=".CreateAccountActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.paylessgroceries1.HomeActivity"></activity>
+        <activity android:name="com.example.paylessgroceries1.ResetPasswordActivity" />
+        <activity android:name="com.example.paylessgroceries1.ForgotPasswordActivity" />
+        <activity android:name="com.example.paylessgroceries1.CreateAccountActivity" />
+        <activity android:name="com.example.paylessgroceries1.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

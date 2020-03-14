@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "738478023202",
+    "firebase_url": "https://paylessgroceries1.firebaseio.com",
+    "project_id": "paylessgroceries1",
+    "storage_bucket": "paylessgroceries1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738478023202:android:779b26b29c38f3f4d1e07b",
+        "android_client_info": {
+          "package_name": "com.example.paylessgroceries1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738478023202-lasitcg239s2gme67mcr8n3pdif51t8i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.paylessgroceries1",
+            "certificate_hash": "d10561dd8f2a2ed7543c754ed130230a37e04372"
+          }
+        },
+        {
+          "client_id": "738478023202-l2lbotea6l6desau53tjtu4f7g7f6lb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1chCnphGkpp5k1-k-FP_P59D-PElUcuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738478023202-l2lbotea6l6desau53tjtu4f7g7f6lb4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
