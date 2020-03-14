@@ -9,14 +9,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.google.android.material.textfield.TextInputEditText;
-
 public class MainActivity extends AppCompatActivity {
 
     //declare private variables
     private EditText mUser, mPass;
     private Button signInButton;
-    private TextView forgotPass, tvSignUp;
+    private TextView forgotPass, signUp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         mPass = findViewById(R.id.password);
         signInButton = findViewById(R.id.signInBtn);
         forgotPass = findViewById(R.id.forgotPassLink);
-        tvSignUp = findViewById(R.id.signUpLink);
+        signUp = findViewById(R.id.signUpLink);
 
         //Action for when sign in button is clicked
         signInButton.setOnClickListener(new View.OnClickListener() {
@@ -52,14 +50,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Direct to CreateAccountActivity when Sign Up is clicked
-        tvSignUp.setOnClickListener(new View.OnClickListener() {
+        signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, CreateAccountActivity.class);
-                startActivity(i);
+                Intent intent = new Intent(MainActivity.this, CreateAccountActivity.class);
+                startActivity(intent);
                 finish();
                 return;
             }
         });
-    }
-}
+    } //[END] onCreate method
+
+
+
+} //[END] MainActivity
