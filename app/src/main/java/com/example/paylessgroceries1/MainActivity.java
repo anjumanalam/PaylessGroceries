@@ -127,6 +127,4 @@ public class MainActivity extends AppCompatActivity {
 //        mAuth.removeAuthStateListener(firebaseAuthListener);
 //    }
 
-
-
 } //[END] MainActivity
