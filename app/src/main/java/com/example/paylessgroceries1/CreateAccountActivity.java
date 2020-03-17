@@ -22,8 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class CreateAccountActivity extends AppCompatActivity {
 
     //declare private variables
-    private TextInputEditText mfName, mlName;
-    private EditText mEmail, mPass, mrPass, mZip;
+    private EditText mEmail, mPass, mrPass;
     private Button btnRegister;
 
     //declare Firebase variables for authentication
@@ -41,12 +40,9 @@ public class CreateAccountActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        mfName = findViewById(R.id.f_name);
-        mlName = findViewById(R.id.l_name);
         mEmail = findViewById(R.id.email);
         mPass = findViewById(R.id.password);
         mrPass = findViewById(R.id.r_password);
-        mZip = findViewById(R.id.zip_code);
         btnRegister = findViewById(R.id.createAccountBtn);
 
         //Set up a Listener for when the user hits the 'Create Account' button
