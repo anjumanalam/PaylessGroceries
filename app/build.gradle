@@ -43,6 +43,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:19.3.0'
     //SDK for Database
     implementation 'com.google.firebase:firebase-database:19.2.1'
+    implementation 'org.jsoup:jsoup:1.13.1'
 
 }
 
