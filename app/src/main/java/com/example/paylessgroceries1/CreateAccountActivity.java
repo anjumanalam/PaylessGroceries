@@ -49,9 +49,9 @@ public class CreateAccountActivity extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO: Implement code for retype password
                 String email = mEmail.getText().toString().trim();
                 String pwd = mPass.getText().toString().trim();
+                String retypepwd = mrPass.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email)){
                     mEmail.setError("Please enter email address.");
@@ -92,6 +92,11 @@ public class CreateAccountActivity extends AppCompatActivity {
 
                 if (pwd.length() < 6){
                     Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (pwd != retypepwd) {
+                    Toast.makeText(getApplicationContext(), "Passwords do not match!", Toast.LENGTH_SHORT).show();
                     return;
                 }
             }

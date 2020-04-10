@@ -44,10 +44,7 @@ public class HomeActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, items);
         lvItems.setAdapter(itemsAdapter);
 
-
         setupListViewListener();
-
-        text = findViewById(R.id.);
 
     }
 
