@@ -44,17 +44,6 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
 
-//        firebaseAuthListener = new FirebaseAuth.AuthStateListener() {
-//            @Override
-//            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-//            if (firebaseAuth.getCurrentUser() != null) {
-//                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-//                finish();
-//                return;
-//            }
-//            }
-//        };
-
         //Click 'Sign In' button
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,9 +73,6 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 });
-
-                //finish();
-                //return;
             }
         });
 
@@ -95,8 +81,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ForgotPasswordActivity.class));
-                //finish();
-                //return;
             }
         });
 
@@ -105,26 +89,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, CreateAccountActivity.class));
-                //finish();
-                //return;
             }
         });
     } //[END] onCreate method
-
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//        mAuth.addAuthStateListener(firebaseAuthListener);
-//
-//        // Check if user is signed in (non-null) and update UI accordingly.
-//        FirebaseUser currentUser = mAuth.getCurrentUser();
-////        updateUI(currentUser);
-//    }
-//
-//    @Override
-//    protected void onStop() {
-//        super.onStop();
-//        mAuth.removeAuthStateListener(firebaseAuthListener);
-//    }
-
 } //[END] MainActivity

@@ -3,6 +3,7 @@ package com.example.paylessgroceries1;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,6 +17,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.widget.Toolbar;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -113,6 +116,11 @@ public class HomeActivity extends AppCompatActivity {
         } else if (id == R.id.about) {
 
         } else if (id == R.id.logout) {
+            FirebaseAuth.getInstance().signOut();
+
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
 
         } else if (id == R.id.search) {
 
